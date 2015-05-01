@@ -1,0 +1,152 @@
+/* 
+  
+  Variables
+  =========
+
+  Green:    #6BBD2E;
+  Yellow:   #FEAA3A;
+  Blue:     #3498DB;
+
+*/
+
+* {
+  position: relative;
+  box-sizing: inherit;
+  font-size: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #f9f9f9;
+  color: #3a3a3a;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  color: #00f;
+  text-decoration: none;
+}
+
+.wrap {
+  width: 90%;
+  margin: auto;
+  max-width: 40rem;
+}
+
+.site-header {
+  padding: 2rem 0;
+}
+
+.site-nav {
+  display: inline-block;
+  float: right;
+  overflow: hidden;
+}
+
+.site-nav a {
+  float: left;
+  padding: 1rem;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.banner {
+  background: #00f;
+  padding: 2rem 0;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.banner h4 em {
+  font-weight: 200;
+}
+
+.projects ul,
+.projects li {
+  list-style: none;
+}
+
+.projects li {
+  display: block;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.projects li:hover {
+  background: #fff;
+}
+
+.project-name,
+.project-date,
+.project-eta {
+  display: inline-block;
+  float: left;
+}
+
+.project-name {
+  width: 50%;
+}
+
+.project-date {
+  width: 25%;
+}
+
+.project-eta {
+  width: 25%;
+}
+
+.legend {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+blockquote {
+  border-left: 2px solid #00f;
+  padding-left: 2rem;
+  margin-left: 0;
+}
+
+code,
+pre {
+  background: #fff;
+  font-family: monospace;
+  font-size: 0.875rem;
+}
+
+pre {
+  padding: 1rem;
+}
+
+code {
+  font-size: 16px;
+}
