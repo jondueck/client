@@ -12,6 +12,7 @@ Set the project status by adding a category in the post frontmatter `categories`
 
 ## Installation
 *This is built on [Jekyll](http://jekyllrb.com) so you will need to have the Jekyll gem installed*
+
 1. `git clone` the repo
 2. `cd` to directory
 3. Set values in _config.yml
