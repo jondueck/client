@@ -5,7 +5,7 @@ layout: default
 </main>
 <div class="banner">
   <div class="wrap">
-    <h1>Client Name</h1>
+    <h1>{{ site.client }}</h1>
     <h4>CLIENT PORTAL <em>βeta</em></h4>
   </div>
 </div>
@@ -32,7 +32,7 @@ layout: default
     </div>
     {% if site.categories.requested == null %}
       <br>
-      <em>No work currently requested.</em> <strong><a href="mailto:jdueck@winklercoop.com">Request Work</a></strong>
+      <em>No work currently requested.</em> <strong><a href="mailto:{{site.email}}">Request Work</a></strong>
     {% endif %}
     {% for post in site.categories.requested %}
       <li>
