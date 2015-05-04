@@ -23,6 +23,10 @@ body {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background: #f9f9f9;
@@ -35,7 +39,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 h3 {
@@ -57,11 +61,21 @@ hr {
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+ul {
   margin-bottom: 1rem;
 }
 
+li {
+  margin: 0.5rem 0;
+}
+
 .projects__requested h2 {
+  padding-bottom: 1rem;
   border-bottom: 2px solid #FEAA3A;
 }
 
@@ -71,6 +85,7 @@ hr {
 }
 
 .projects__progress h2 {
+  padding-bottom: 1rem;
   border-bottom: 2px solid #3498DB;
 }
 .projects__progress a,
@@ -79,6 +94,7 @@ hr {
 }
 
 .projects__completed h2 {
+  padding-bottom: 1rem;
   border-bottom: 2px solid #6BBD2E;
 }
 
@@ -123,7 +139,7 @@ hr {
   background: #00f;
   padding: 2rem 0;
   color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .banner h4 em {
