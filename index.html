@@ -12,98 +12,94 @@ layout: default
 <main class="wrap">
 <div class="home">
 
-<!--   <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul> -->
   <section class="projects">
-    <h2>Requested</h2>
-    <div class="legend">
-      <span class="project-name">
-        Project
-      </span>
-      <span class="project-date">
-        Requested
-      </span>
+    <div class="projects__requested">
+      <h2>Requested</h2>
+      <div class="legend">
+        <span class="project-name">
+          Project
+        </span>
+        <span class="project-date">
+          Requested
+        </span>
+      </div>
+      {% if site.categories.requested == null %}
+        <br>
+        <em>No work currently requested.</em> <strong><a href="mailto:{{site.email}}">Request Work</a></strong>
+      {% endif %}
+      {% for post in site.categories.requested %}
+        <li>
+            <span class="project-name">
+              <a href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title }}</h3></a>
+            </span>
+            <span class="project-date">
+              {{ post.date | date: "%-d %B" }}
+            </span>
+        </li>
+      {% endfor %}
     </div>
-    {% if site.categories.requested == null %}
-      <br>
-      <em>No work currently requested.</em> <strong><a href="mailto:{{site.email}}">Request Work</a></strong>
-    {% endif %}
-    {% for post in site.categories.requested %}
-      <li>
-          <span class="project-name">
-            <a href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title }}</h3></a>
-          </span>
-          <span class="project-date">
-            {{ post.date | date: "%-d %B" }}
-          </span>
-      </li>
-    {% endfor %}
-
-    <h2>In Progress</h2>
-    <div class="legend">
-      <span class="project-name">
-        Project
-      </span>
-      <span class="project-date">
-        Start Date
-      </span>
-      <span class="project-eta">
-        Estimated Completion
-      </span>
+    <div class="projects__progress">
+      <h2>In Progress</h2>
+      <div class="legend">
+        <span class="project-name">
+          Project
+        </span>
+        <span class="project-date">
+          Start Date
+        </span>
+        <span class="project-eta">
+          Estimated Completion
+        </span>
+      </div>
+      {% if site.categories.progress == null %}
+        <br>
+        <em>No work in progress.</em>
+      {% endif %}
+      {% for post in site.categories.progress] %}
+        <li>
+            <span class="project-name">
+              <a href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title }}</h3></a>
+            </span>
+            <span class="project-date">
+              {{ post.date | date: "%-d %B %Y" }}
+            </span>
+            <span class="project-eta">
+              {{ post.eta | date: "%-d %B" }}
+            </span>
+        </li>
+      {% endfor %}
     </div>
-    {% if site.categories.progress == null %}
-      <br>
-      <em>No work in progress.</em>
-    {% endif %}
-    {% for post in site.categories.progress] %}
-      <li>
-          <span class="project-name">
-            <a href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title }}</h3></a>
-          </span>
-          <span class="project-date">
-            {{ post.date | date: "%-d %B %Y" }}
-          </span>
-          <span class="project-eta">
-            {{ post.eta | date: "%-d %B" }}
-          </span>
-      </li>
-    {% endfor %}
-
-    <h2>Completed</h2>
-    <div class="legend">
-      <span class="project-name">
-        Project
-      </span>
-      <span class="project-date">
-        Completed
-      </span>
-      <span class="project-eta">
-        Download Link
-      </span>
+    <div class="projects__completed">
+      <h2>Completed</h2>
+      <div class="legend">
+        <span class="project-name">
+          Project
+        </span>
+        <span class="project-date">
+          Completed
+        </span>
+        <span class="project-eta">
+          Download Link
+        </span>
+      </div>
+      {% if site.categories.completed == null %}
+        <br>
+        <em>Still waiting for your first project to be completed.</a></strong>
+      {% endif %}
+      {% for post in site.categories.completed] %}
+        <li>
+            <span class="project-name">
+              <a href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title }}</h3></a>
+            </span>
+            <span class="project-date">
+              {{ post.completed | date: "%-d %B %Y" }}
+            </span>
+            <span class="project-download">
+              <a href="{{ post.download }}">Download</a>
+            </span>
+        </li>
+      {% endfor %}
     </div>
-    {% if site.categories.completed == null %}
-      <br>
-      <em>Still waiting for your first project to be completed.</a></strong>
-    {% endif %}
-    {% for post in site.categories.completed] %}
-      <li>
-          <span class="project-name">
-            <a href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title }}</h3></a>
-          </span>
-          <span class="project-date">
-            {{ post.completed | date: "%-d %B %Y" }}
-          </span>
-          <span class="project-download">
-            <a href="{{ post.download }}">Download</a>
-          </span>
-      </li>
-    {% endfor %}
 </section>
 
 </div>

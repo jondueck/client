@@ -9,4 +9,8 @@ status: completed
 download: 
 ---
 
-> Please make facebook cover photos
+## Objective
+Create cover photo options for the Sun Valley Co-op [Facebook Page](https://www.facebook.com/pages/Sun-Valley-Co-op/115555628513413).
+
+## Deliverables
+I have created several variations that can be used. 

@@ -4,8 +4,16 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+This is a simple client portal website which allows you and your clients to keep track of the status of projects, and download projects once they're done. This site is built on [Jekyll](jekyllrb.com).
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+You can view the code for this site at [github.com/jondueck/client](https://github.com/jondueck/client). Currently this code is copyright [Collectif](http://collectif.co), but this may become open source depending on interest.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+---
+
+### Future goals:
+
+- Create a webapp version of this in [Angular.js](https://angularjs.org) or [Meteor](https://www.meteor.com)
+
+---
+
+For the most part, content will be created in posts, but you could use this about page to explain to your client what this site is all about.
